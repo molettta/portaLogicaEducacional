@@ -18,7 +18,7 @@ As portas lógicas desenvolvidas neste kit permitem que o usuário interaja com 
 Além disso, há um botão específico para verificar o estado da porta de saída. Ao pressionar este botão, o usuário pode ouvir o som que representa o estado atual da saída, permitindo uma verificação rápida e acessível das operações lógicas realizadas.
 Esse design inclusivo, com feedback sonoro, garante que tanto os alunos comuns quanto aqueles com deficiências possam interagir de maneira eficaz com as portas lógicas, entendendo seus conceitos por meio de múltiplos sentidos.
 
-# Kit Arduino do Senac
+# Kit Arduino 
 O Arduino é uma plataforma de prototipagem eletrônica que combina uma placa de circuito integrado com um microcontrolador e um ambiente de desenvolvimento integrado (IDE). É usado para criar projetos de hardware interativos, permitindo a programação e controle de dispositivos eletrônicos de maneira simples e acessível.
 Serventia do Arduino para o Projeto
 No projeto de controle de portas lógicas E e OU, o Arduino é essencial para:
@@ -52,12 +52,13 @@ Para ligar um botão ao Arduino e garantir que ele funcione corretamente, precis
 # O Que é um Resistor Pull-up?
 Um resistor pull-up é usado para garantir que o pino de entrada do Arduino leia um estado HIGH (1) estável quando o botão não está pressionado. Sem esse resistor, o pino de entrada pode ficar "flutuando", captando ruídos elétricos e gerando leituras instáveis.
 
-![Texto Alternativo](./assets/botao.png)
-
-# Como Funciona a Configuração Pull-up?
-Na configuração pull-up:
 •	Quando o botão NÃO está pressionado: O pino de entrada está conectado ao 5V através do resistor pull-up, garantindo que o Arduino leia um estado HIGH (1).
 •	Quando o botão ESTÁ pressionado: O botão cria uma conexão direta entre o pino e o GND, fazendo com que o Arduino leia um estado LOW (0).
+
+![Texto Alternativo](./assets/botao.png)
+
+
+
 
 
 # Emitindo Som:
