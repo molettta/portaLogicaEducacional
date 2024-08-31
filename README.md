@@ -42,3 +42,46 @@ O KIT Arduino do Senac já possui alguns compontes básicos como botões, leds, 
 # 1. Ligando e Desligando um LED com Arduino
 O Arduino pode controlar um LED enviando sinais de alta (HIGH) ou baixa (LOW) tensão através de um de seus pinos digitais. Quando o pino digital está configurado como saída e definido como HIGH, ele fornece uma tensão de aproximadamente 5V. Quando definido como LOW, a tensão cai para 0V. Essa mudança de tensão é o que liga ou desliga o LED.
 
+![Texto Alternativo](./assets/led.png)
+
+# Por Que Usar um Resistor?
+O resistor é um componente fundamental neste circuito porque ele limita a quantidade de corrente que passa pelo LED. Sem o resistor, o LED receberia mais corrente do que ele pode suportar, o que poderia danificá-lo ou até queimá-lo.
+O resistor ajuda a proteger o LED e o próprio Arduino, garantindo que a corrente permaneça em níveis seguros. A resistência necessária depende da tensão do Arduino (geralmente 5V) e das características do LED, como sua queda de tensão (tipicamente entre 1,8V e 3,3V) e a corrente ideal (geralmente 20mA).
+# Ligando um botão no Arduino:
+Para ligar um botão ao Arduino e garantir que ele funcione corretamente, precisamos usar uma técnica chamada pull-up
+# O Que é um Resistor Pull-up?
+Um resistor pull-up é usado para garantir que o pino de entrada do Arduino leia um estado HIGH (1) estável quando o botão não está pressionado. Sem esse resistor, o pino de entrada pode ficar "flutuando", captando ruídos elétricos e gerando leituras instáveis.
+
+![Texto Alternativo](./assets/botao.png)
+
+# Como Funciona a Configuração Pull-up?
+Na configuração pull-up:
+•	Quando o botão NÃO está pressionado: O pino de entrada está conectado ao 5V através do resistor pull-up, garantindo que o Arduino leia um estado HIGH (1).
+•	Quando o botão ESTÁ pressionado: O botão cria uma conexão direta entre o pino e o GND, fazendo com que o Arduino leia um estado LOW (0).
+
+
+# Emitindo Som:
+# O Que é um Buzzer?
+Um buzzer é um dispositivo que produz um som quando uma corrente elétrica passa por ele. Existem dois tipos principais de buzzers:
+•	Buzzer Ativo: Já contém um circuito interno que gera o som. Você só precisa fornecer uma tensão.
+•	Buzzer Passivo: Não tem um circuito interno e precisa de uma frequência específica para gerar o som. Você precisa gerar um sinal de onda quadrada com o Arduino para fazê-lo funcionar.
+Aqui está o circuito de ligação para tanto o buzzer ativo e passivo, utilizando o Arduino:
+
+![Texto Alternativo](./assets/buzzer.png)
+
+
+# Circuito para porta lógica E e OU:
+Para essas duas portas o circuito será o mesmo, a diferença é na linguagem da programação que calculará se a saída está ativa de acordo com a lógica E ou OU. Serão 3 entradas e 1 saída para cada porta, para expressar os estados de acordo com o explicado anteriormente. O circuito final para o controle da porta lógica é:
+
+![Texto Alternativo](./assets/portaeeou.png)
+
+# Agora o circuito para porta NÃO:
+
+
+![Texto Alternativo](./assets/portan.png)
+
+
+# Código fonte
+
+
+![Texto Alternativo](./assets/fluxograma.png)
